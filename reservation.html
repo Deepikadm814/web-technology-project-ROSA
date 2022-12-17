@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="reservations">
+        <h1>Reservations:</h1>
+        <p>Full Name : </p>
+        <input type="text" data-field="name">
+        <p>Email Address : </p>
+        <input type="text" data-field="email">
+        <p>Phone Number : </p>
+        <input type="text" data-field="phone">
+        <p>Number Of People : </p>
+        <input id="slider" type="range" name="rangeInput" min="1" max="10" value="5" onchange="updateTextInput(this.value);">
+        <input type="text" id="textInput" value="5">
+        <p>Date : </p>
+        <input type="text" data-field="date">
+        <p>Time : </p>
+        <input type="text" data-field="time">
+        <button>Submit</button>
+      </div>
+      
+      <div class="thankyou">
+        <i class="fa fa-check-square-o"></i>
+        <h1>Thank you!</h1>
+        <p>The restaurant has been notified of your arrival and a confirmation email has been sent to you.</p>
+      </div>
+      
+      <div id="dtBox"></div>
+      <script src="reservation.js"></script>
+</body>
+</html>
